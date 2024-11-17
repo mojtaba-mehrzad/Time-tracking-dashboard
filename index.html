@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; color: hsl(235, 45%, 61%); }
+    .attribution a { color: hsl(236, 100%, 87%); }
+  </style>
+</head>
+<body>
+  <main>
+    <!--Dashboard card start-->
+    <div class="dashboard-card">
+      <div class="dashboard-profile">
+        <picture>
+          <img class="dashboard-profile-image" src="./assets/images/image-jeremy.png" alt="Jeremy Robson's profile picture">
+        </picture>
+        <div class="dashboard-profile-info">
+          <p class="dashboard-profile-title">Report for</p>
+          <p class="dashboard-profile-name">Jeremy Robson</p>
+        </div> 
+      </div>
+      <div class="dashboard-Report-type">
+        <button class="dashboard-report-btn" disabled type="button" id="daily">Daily</button>
+        <button class="dashboard-report-btn" type="button" id="weekly">Weekly</button>
+        <button class="dashboard-report-btn" type="button" id="monthly">Monthly</button>
+      </div>
+    </div>
+    <!--Dashboard card end-->
+
+    <!--work card start-->
+    <div class="card" id="Work">
+      <img class="card-icon" src="./assets/images/icon-work.svg" alt="">
+      <div class="card-info">
+        <div class="card-header">
+          <p class="card-title">Work</p>
+          <a href="#"><img class="card-btn" src="./assets/images/icon-ellipsis.svg"></a>
+        </div>
+        <div class="card-time-tracking">
+          <p class="card-current-time" id="currentHours">4hrs</p>
+          <p class="card-previous-time">Last 
+            <span id="previous-time-type">daily</span>
+            - <span id="previous-time">7hrs</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--work card end-->
+
+    <!--play card start-->
+    <div class="card" id="Play">
+      <img class="card-icon" src="./assets/images/icon-play.svg" alt="">
+      <div class="card-info">
+        <div class="card-header">
+          <p class="card-title">Play</p>
+          <a href="#"><img class="card-btn" src="./assets/images/icon-ellipsis.svg"></a>
+        </div>
+        <div class="card-time-tracking">
+          <p class="card-current-time" id="currentHours">5hrs</p>
+          <p class="card-previous-time">Last 
+            <span id="previous-time-type">Daily</span>
+            - <span id="previous-time">7hrs</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--paly card end-->
+
+    <!--study card start-->
+    <div class="card" id="Study">
+      <img class="card-icon" src="./assets/images/icon-study.svg" alt="">
+      <div class="card-info">
+        <div class="card-header">
+          <p class="card-title">Study</p>
+          <a href="#"><img class="card-btn" src="./assets/images/icon-ellipsis.svg"></a>
+        </div>
+        <div class="card-time-tracking">
+          <p class="card-current-time" id="currentHours">5hrs</p>
+          <p class="card-previous-time">Last 
+            <span id="previous-time-type">Daily</span>
+            - <span id="previous-time">7hrs</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--study card end-->
+
+    <!--exercise card start-->
+    <div class="card" id="Exercise">
+      <img class="card-icon" src="./assets/images/icon-exercise.svg" alt="">
+      <div class="card-info">
+        <div class="card-header">
+          <p class="card-title">Exercise</p>
+          <a href="#"><img class="card-btn" src="./assets/images/icon-ellipsis.svg"></a>
+        </div>
+        <div class="card-time-tracking">
+          <p class="card-current-time" id="currentHours">5hrs</p>
+          <p class="card-previous-time">Last 
+            <span id="previous-time-type">Daily</span>
+            - <span id="previous-time">7hrs</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--exercise card end-->
+
+    <!--social card start-->
+    <div class="card" id="Social">
+      <img class="card-icon" src="./assets/images/icon-social.svg" alt="">
+      <div class="card-info">
+        <div class="card-header">
+          <p class="card-title">Social</p>
+          <a href="#"><img class="card-btn" src="./assets/images/icon-ellipsis.svg"></a>
+        </div>
+        <div class="card-time-tracking">
+          <p class="card-current-time" id="currentHours">5hrs</p>
+          <p class="card-previous-time">Last 
+            <span id="previous-time-type">Daily</span>
+            - <span id="previous-time">7hrs</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--social card end-->
+
+    <!--self care card start-->
+    <div class="card" id="SelfCare">
+      <img class="card-icon" src="./assets/images/icon-self-care.svg" alt="">
+      <div class="card-info">
+        <div class="card-header">
+          <p class="card-title">Self Care</p>
+          <a href="#"><img class="card-btn" src="./assets/images/icon-ellipsis.svg"></a>
+        </div>
+        <div class="card-time-tracking">
+          <p class="card-current-time" id="currentHours">5hrs</p>
+          <p class="card-previous-time">Last 
+            <span id="previous-time-type">Daily</span>
+            - <span id="previous-time">7hrs</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--self care card end-->
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#" target="_blank">Mojtaba Mehrzad</a>.
+    </div>  
+  </footer>
+  
+  
+
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/data.json"></script>
+</body>
+</html>
