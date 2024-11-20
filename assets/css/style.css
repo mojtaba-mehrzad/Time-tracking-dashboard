@@ -183,6 +183,17 @@
     font-size: 1.125rem;
     color: whitesmoke;
   }
+
+  .card-btn{
+    border: none;
+    background: none;
+    transition: all 0.4s;
+  }
+
+  .card-btn:hover{
+    cursor: pointer;
+    transform: translateY(-0.15rem);
+  }
   /* card header end */
 
   /* time tracking start */
